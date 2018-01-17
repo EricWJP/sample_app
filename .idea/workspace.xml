@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90fba949-86cf-4ed7-81e0-361fb41e501d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sample_app.iml" afterPath="$PROJECT_DIR$/.idea/sample_app.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
     </list>
     <ignored path="$PROJECT_DIR$/.bundle/" />
     <ignored path="$PROJECT_DIR$/components/" />
@@ -22,11 +25,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Gemfile" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="24" />
+            <state relative-caret-position="395">
+              <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -45,11 +48,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="true">
+      <file leaf-file-name="application.html.erb" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="test_helper.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="135">
-              <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+              <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -83,7 +96,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/home.html.erb" />
         <option value="$PROJECT_DIR$/app/views/static_pages/about.html.erb" />
@@ -93,6 +105,8 @@
         <option value="$PROJECT_DIR$/test/controllers/static_pages_controller_test.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/test/test_helper.rb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -287,7 +301,7 @@
     <property name="FullScreen" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/config/routes.rb&#10;sta&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/controllers/static_pages_controller.rb&#10;rout&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/config/routes.rb&#10;gem&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/Gemfile&#10;test/controllers/&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/test/controllers&#10;help.ht&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/views/static_pages/help.html.erb&#10;home&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/views/static_pages/home.html.erb&#10;foo&#9;null&#9;null&#10;views/&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/views&#10;routes&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/config/routes.rb&#10;static&#9;null&#9;null&#10;applicationcon&#9;null&#9;null&#10;misc.x&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/.idea/misc.xml&#10;re&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/README.md" />
+    <property name="SearchEverywhereHistoryKey" value="gemfile&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/Gemfile&#10;testhe&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/test/test_helper.rb&#10;route&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/config/routes.rb&#10;sta&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/controllers/static_pages_controller.rb&#10;rout&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/config/routes.rb&#10;gem&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/Gemfile&#10;test/controllers/&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/test/controllers&#10;help.ht&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/views/static_pages/help.html.erb&#10;home&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/views/static_pages/home.html.erb&#10;foo&#9;null&#9;null&#10;views/&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/app/views&#10;routes&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/config/routes.rb&#10;static&#9;null&#9;null&#10;applicationcon&#9;null&#9;null&#10;misc.x&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/.idea/misc.xml&#10;re&#9;FILE&#9;file:///Users/adolphalex/Projects/sample_app/README.md" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -597,7 +611,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13979000" />
+    <option name="totallyTimeSpent" value="16005000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -862,18 +876,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/foos_controller.rb" />
     <entry file="file://$PROJECT_DIR$/app/views/foos/bar.html.erb" />
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="11" column="24" lean-forward="false" selection-start-line="11" selection-start-column="23" selection-end-line="11" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="3" lean-forward="false" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+        <state relative-caret-position="210">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -928,6 +934,22 @@
             <marker date="1516185184354" expanded="true" signature="30:332" ph="do ... end" />
             <marker date="1516185184354" expanded="true" signature="303:328" ph="do ... end" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/test_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
