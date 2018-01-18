@@ -8,6 +8,9 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '5.1.4'
+gem 'will_paginate-bootstrap', '1.0.0'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
+
 
 # Use Puma as the app server
 gem 'puma', '3.9.1'
@@ -63,6 +66,7 @@ group :test do
   gem 'guard',                    '2.13.0'
   gem 'guard-minitest',           '2.4.4'
 end
+
 
 group :production do
   gem 'pg', '0.20.0'
