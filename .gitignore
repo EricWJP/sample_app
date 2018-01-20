@@ -26,4 +26,4 @@
 /spring/*.pid
 
 #Ignore example files
-*_example
+*_example.rb
