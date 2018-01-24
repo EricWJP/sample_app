@@ -117,6 +117,11 @@ GEM
     pry (0.11.3)
       coderay (~> 1.1.0)
       method_source (~> 0.9.0)
+    pry-byebug (3.4.2)
+      byebug (~> 9.0)
+      pry (~> 0.10)
+    pry-rails (0.3.6)
+      pry (>= 0.10.4)
     puma (3.9.1)
     rack (2.0.3)
     rack-test (0.8.2)
@@ -215,6 +220,9 @@ DEPENDENCIES
   listen (= 3.0.8)
   minitest-reporters (= 1.1.14)
   pg (= 0.20.0)
+  pry
+  pry-byebug
+  pry-rails
   puma (= 3.9.1)
   rails (= 5.1.4)
   rails-controller-testing (= 1.0.2)
