@@ -12,7 +12,7 @@ class User < ApplicationRecord
   # validates :email, uniqueness: {case_sensitive: true} #唯一（区分大小写） 等价于   validates :email, uniqueness: true
 
   has_secure_password
-  validates :password, presence: true, length: {minimum: 6}
+  validates :password, presence: true, length: {minimum: 6}, allow_nil: true
 
   #返回指定字符串的哈希摘要
   def User.digest(string)
