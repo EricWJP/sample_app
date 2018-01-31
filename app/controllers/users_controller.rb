@@ -5,13 +5,13 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
 
   def index
-    @users = User.all.paginate(page: params[:page] || 1, per_page: params[:per_page] || 30)
+    @users = User.where(activated: true).paginate(page: params[:page], per_page: params[:per_page])
     # binding.pry
   end
 
   def show
     @user = User.find(params[:id])
-    # debugger
+    redirect_to root_url and return unless @user.activated?
   end
 
   def new
@@ -22,8 +22,12 @@ class UsersController < ApplicationController
     # binding.pry
     @user = User.new(permitted_params)    # 不是最终的实现方式
     if @user.save
-      flash[:success] = "Welcome to the sample App!"
-      redirect_to @user
+      @user.send_activation_email
+      flash[:info] = "Please check your email to activate your account."
+      redirect_to root_url
+
+      # flash[:success] = "Welcome to the sample App!"
+      # redirect_to @user
        # user_url(@user)
       # user_path(@user)
     else
@@ -61,7 +65,7 @@ class UsersController < ApplicationController
     # params.permit(user: User.attribute_names - [:password_digest])
   end
 
-  #确宝用户已登录
+  #确保用户已登录
   def logged_in_user
     unless logged_in?
       store_location
@@ -80,5 +84,6 @@ class UsersController < ApplicationController
   def admin_user
     redirect_to root_url  unless current_user.admin?
   end
+
 
 end

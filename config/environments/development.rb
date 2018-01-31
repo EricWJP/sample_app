@@ -26,10 +26,37 @@ Rails.application.configure do
     config.cache_store = :null_store
   end
 
+  # Force all access to the app over SSL, use Strict-Transport-Security, and use secure cookies.
+  # config.force_ssl = true
+
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
+  # config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  host = 'localhost:3000'  # 不要原封不动使用这个域名，
+  # 应该使用你本地的开发主机地址
+  config.action_mailer.default_url_options = { host: host, protocol: 'https' }
 
   config.action_mailer.perform_caching = false
+
+  config.action_mailer.smtp_settings = {:address => "smtp.gmail.com",
+                                        :port => "587",
+                                        :domain => "gmail.com",
+                                        :authentication => "plain",
+                                        :user_name => "qianchengsijinmi@gmail.com",
+                                        :password => "3022515623I@Y",
+                                        :enable_starttls_auto => true
+  }
+  # {address: 'smtp.163.com',
+  #                                       port: 25,
+  #                                       # domain: 'mail.126.com',
+  #                                       # display_name: 'send_coux_batch@send.star-chat.com',
+  #                                       user_name: 'qianchengsijinmi@163.com',
+  #                                       password: '3022515623I@Y',
+  #                                       authentication: :plain
+  #                                       # enable_starttls_auto: true
+  #                                       }
+
 
   # Print deprecation notices to the Rails logger.
   config.active_support.deprecation = :log
