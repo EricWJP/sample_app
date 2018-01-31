@@ -3,6 +3,8 @@ class UsersController < ApplicationController
   before_action :logged_in_user, only: [:edit, :update, :index, :destroy]
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy
+  before_action :puts3
+  before_action :puts4
 
   def index
     @users = User.where(activated: true).paginate(page: params[:page], per_page: params[:per_page])
@@ -65,14 +67,16 @@ class UsersController < ApplicationController
     # params.permit(user: User.attribute_names - [:password_digest])
   end
 
-  #确保用户已登录
-  def logged_in_user
-    unless logged_in?
-      store_location
-      flash[:danger] = "Please sign in."
-      redirect_to login_path
-    end
-  end
+
+  # 已移动到application_controller.rb中
+  # #确保用户已登录
+  # def logged_in_user
+  #   unless logged_in?
+  #     store_location
+  #     flash[:danger] = "Please sign in."
+  #     redirect_to login_path
+  #   end
+  # end
 
   # 确保是正确的用户
   def correct_user
@@ -83,6 +87,12 @@ class UsersController < ApplicationController
   # 确保是管理员
   def admin_user
     redirect_to root_url  unless current_user.admin?
+  end
+  def puts3
+    binding.pry
+  end
+  def puts4
+    binding.pry
   end
 
 
